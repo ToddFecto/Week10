@@ -1,0 +1,14 @@
+﻿@model Products
+@{
+    ViewData["Title"] = "product";
+}
+
+<h1>Product Details</h1>
+
+<div>@Model.name</div>
+<div>@Model.description</div>
+<div>@Model.price</div>
+<div>@Model.category</div>
+
+<a href="/product/delete?id=@Model.id" class="btn btn-danger">Delete</a>
+<a href="/product/editform?prodid=@Model.id" class="btn bt">Edit</a>
